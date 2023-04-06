@@ -15,9 +15,9 @@ const sarahPostal = '0310'
 
 const leo = {
 	name: leoName,
-	balance : leoBalance,
-	'access id' : '47afb389-8014-4d0b-aff3-e40203d2107f',
 	age : 24,
+	'access id' : '47afb389-8014-4d0b-aff3-e40203d2107f',
+	balance : leoBalance * -1,
 	address : {
 		number : leoNumber,
 		street : leoStreet,
@@ -29,7 +29,7 @@ const sarah = {
 	name : sarahName + sarahSurname,
 	age : 62,
 	'access id' : '6b279ae5-5657-4240-80e9-23f6b635f7a8',
-	balance : sarahBalance,
+	balance : parseFloat((sarahBalance * -1).toFixed(2)),
 	address : {
 		number : sarahNumber,
 		street : sarahStreet,
